@@ -1,0 +1,115 @@
+<!--
+By: Osama Aamer
+
+HTML FILE
+*/ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>TicTacToeJS</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="assets/Bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/sheet.css">
+	<script src="assets/Jquery/jquery.min.js"></script>
+	<script src="assets/Bootstrap/bootstrap.min.js"></script>
+</head>
+
+<!-- Body with a scroll spy  -->
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<!-- Navigation bar -->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#myPage">TicTacToe <strong>JS</strong></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#instructions">INSTRUCTIONS</a></li>
+        <li><a href="#howitworks">HOW IT WORKS</a></li>
+        <li><a href="#contact">CONTACT ME</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Jumbotron that contains the game -->
+<div class="jumbotron">
+  <div class="container">
+    <div class="row">
+      <div class="margin col-sm-5 text-left gameDesc">
+        <h1>Tic Tac Toe</h1>
+        <p>The classic game now built in HTML5.</p>
+        <div id = "gameInfo">
+        </div>
+        <a class="btn btn-default btn-lg" id="ResetButton" type="button" value="Play Again"/>Play Again</a>
+      </div>
+      <div class="col-sm-7 text-center">
+        <div id="SplashScreen">
+        <a class="btn btn-default btn-lg" id="StartButton" type="button" value="Start"/>Play</a>
+      </div>
+        <canvas id="myCanvas" width="510" height="510"></canvas>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Container for instructions -->
+<div id="instructions" class="container-fluid text-center">
+  <h2>Instructions</h2>
+  <h4>How to play?</h4>
+  <br>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+      <h4>STEP ONE</h4>
+      <p>Grab a buddy..</p>
+    </div>
+    <div class="col-sm-4">
+      <h4>STEP TWO</h4>
+      <p>Fight over who goes first..</p>
+    </div>
+    <div class="col-sm-4">
+      <h4>STEP THREE</h4>
+      <p>Align your circles and crosses..</p>
+    </div>
+  </div>
+</div>
+
+<!-- Container for game explanation -->
+<div id="howitworks" class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8">
+      <h2>A classic in it's truest sense.</h2><br>
+      <h4>Who hasn't played Tic Tac Toe? The odds of finding someone who hasn't spent time battling it out with friends are astronomically low. Let's face it, everyone knows Tic Tac Toe.</h4><br>
+      <p>Now with the power of HTML5 and vanilla JavaScript, this game can be played by anyone on any device with a modern web browser.</p>
+	  <p>Just tap where you want to make a move and be drawn in with smooth animation, clean design and fast rendering.</p>
+      <br><a href="https://en.wikipedia.org/wiki/Tic-tac-toe" target="_blank" class="btn btn-default btn-lg">More Info</a>
+    </div>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<footer id="contact" class="container-fluid bg-grey text-center">
+  <h2>CONTACT ME</h2>
+  <div class="row">
+      <p>If you have any query please contact me.</p>
+      <p>Osama Aamer<br>				
+  </div>
+</footer>
+
+<!-- Game Code -->
+<script src = "js/code.js">
+
+</script>
+
+</body>
+</html>

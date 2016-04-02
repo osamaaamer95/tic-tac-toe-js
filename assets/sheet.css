@@ -1,0 +1,135 @@
+/*
+By: Osama Aamer
+
+SASS SCSS FILE
+*/
+@font-face {
+  font-family: comic;
+  src: url(fonts/FunSized.ttf); }
+@font-face {
+  font-family: roboto;
+  src: url(fonts/Roboto.ttf); }
+@font-face {
+  font-family: geosans;
+  src: url(fonts/Geosans.ttf); }
+body {
+  font: 18px roboto, sans-serif;
+  line-height: 2.2;
+  color: #818181;
+  background-color: #f2f2f2; }
+
+canvas {
+  margin: 0 auto;
+  display: none;
+  height: 510px;
+  width: 510px;
+  pointer-events: auto; }
+
+#splashScreen {
+  height: 510px;
+  width: 510px;
+  margin: 0 auto; }
+
+.animate {
+  transition: all 0.1s;
+  -webkit-transition: all 0.1s; }
+
+#StartButton {
+  margin-top: 200px; }
+
+#ResetButton {
+  display: none; }
+
+.btn {
+  width: 150px; }
+
+#gameInfo {
+  font-size: 20px;
+  height: 100px; }
+
+h2 {
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #303030;
+  font-weight: 600;
+  margin-bottom: 30px; }
+
+h4 {
+  font-size: 19px;
+  line-height: 1.375em;
+  color: #303030;
+  font-weight: 400;
+  margin-bottom: 30px; }
+
+.jumbotron {
+  min-height: 725px;
+  background-color: #2A2C2B;
+  color: #fff;
+  padding: 100px 25px; }
+  .jumbotron h1 {
+    font-family: "comic", sans-serif; }
+
+.gameDesc {
+  padding-left: 50px; }
+
+.container-fluid {
+  padding: 60px 50px; }
+
+.bg-grey {
+  background-color: #1E1E20; }
+
+.navbar {
+  margin-bottom: 0;
+  background-color: #1E1E20;
+  z-index: 9999;
+  color: #1E1E20;
+  border: 0;
+  font-size: 12px !important;
+  line-height: 1.42857143 !important;
+  letter-spacing: 4px;
+  border-radius: 0; }
+
+.navbar li a, .navbar .navbar-brand {
+  color: #f2f2f2 !important; }
+
+.navbar-nav li a:hover, .navbar-nav li.active a {
+  color: #DC3522 !important;
+  background-color: #fff !important; }
+
+.navbar-default .navbar-toggle {
+  border-color: transparent;
+  color: #fff !important; }
+
+footer {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #f2f2f2 !important; }
+  footer h2 {
+    color: #f2f2f2; }
+
+.slideanim {
+  visibility: hidden; }
+
+.slide {
+  animation-name: slide;
+  -webkit-animation-name: slide;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  visibility: visible; }
+
+@keyframes slide {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(70%); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%); } }
+@-webkit-keyframes slide {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(70%); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%); } }
+
+/*# sourceMappingURL=sheet.css.map */
